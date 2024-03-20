@@ -13,8 +13,7 @@ namespace API.Extensions
         {
             app.MapGet("/Promocoes", (IHttpContextAccessor httpContextAccessor) =>
             {
-                var request = httpContextAccessor?.HttpContext?.Request;
-                var baseUri = $"{request?.Scheme}://{request?.Host}";
+                var baseUri = httpContextAccessor?.HttpContext?.Request.GetBaseUrl();
                 var urlImagens = $"{baseUri}/Imagens";
 
                 var listaPromocoes = new List<Promocao>

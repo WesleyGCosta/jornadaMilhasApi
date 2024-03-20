@@ -31,5 +31,6 @@ app.UseHttpsRedirection();
 
 app.AddEndpointPromocao();
 app.AddEndpointEstado();
+app.AddEndpointDepoimento();
 
 app.Run();

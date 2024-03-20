@@ -6,8 +6,9 @@ namespace API.EndPoints
     {
         public static void AddEndpointEstado(this WebApplication app)
         {
-            app.MapGet("/Estados", () =>
+            app.MapGet("/Estados", (IHttpContextAccessor httpContextAccessor) =>
             {
+
                 return Results.Ok(new Estado().GetEstados().OrderBy( e => e.Nome));
             });
         }
