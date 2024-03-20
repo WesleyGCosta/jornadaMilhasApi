@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot\Imagens\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Imagens\atacama.png" />
+    <None Include="wwwroot\Imagens\avatar-1.png" />
+    <None Include="wwwroot\Imagens\avatar-2.png" />
+    <None Include="wwwroot\Imagens\avatar-3.png" />
+    <None Include="wwwroot\Imagens\cordilheira-dos-andes.png" />
+    <None Include="wwwroot\Imagens\grand-canyon.png" />
+    <None Include="wwwroot\Imagens\patagonia.png" />
+    <None Include="wwwroot\Imagens\turquia.png" />
+    <None Include="wwwroot\Imagens\veneza.png" />
+  </ItemGroup>
+
+</Project>
